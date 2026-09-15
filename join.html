@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Join — St. Elmo Booster Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #103a88;
+    --navy-dark: #0a2960;
+    --sage: #529268;
+    --gold: #d2a02c;
+    --gold-light: #e8c16a;
+    --cream: #f9f8f4;
+    --white: #ffffff;
+    --text: #2b2b2b;
+    --text-soft: #55554f;
+    --header-font: "Fraunces", Georgia, serif;
+    --body-font: "Quicksand", Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--body-font);
+    color: var(--text);
+    line-height: 1.6;
+    background: var(--cream);
+  }
+
+  h1, h2 { font-family: var(--header-font); color: var(--navy-dark); line-height: 1.2; font-weight: 700; }
+
+  a { color: var(--navy); }
+
+  .skip-link {
+    position: absolute; left: -999px; top: 0;
+    background: var(--navy); color: #fff;
+    padding: 0.75rem 1.25rem; z-index: 1000; font-weight: 700; text-decoration: none;
+  }
+  .skip-link:focus { left: 0.5rem; top: 0.5rem; }
+
+  a:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .mockup-banner { background: #1a1a1a; color: #fff; text-align: center; padding: 0.6rem 1rem; font-size: 0.85rem; }
+  .mockup-banner .placeholder-flag { background: #fff8d6; color: #6b5900; padding: 0.05em 0.5em; border-radius: 4px; font-weight: 600; }
+
+  header { background: var(--white); border-bottom: 3px solid var(--navy); }
+  nav {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; gap: 1rem;
+    padding: 0.6rem 1.25rem;
+  }
+  nav .site-name { font-family: var(--header-font); font-weight: 700; color: var(--navy-dark); font-size: 1.05rem; text-decoration: none; }
+  nav .back-link { margin-left: auto; font-weight: 600; font-size: 0.92rem; text-decoration: none; color: var(--text); }
+  nav .back-link:hover { color: var(--navy); }
+
+  main { padding: 4rem 1.25rem; }
+  .wrap { max-width: 640px; margin: 0 auto; text-align: center; }
+
+  .page-head .topper {
+    color: var(--navy); text-transform: uppercase; letter-spacing: 0.09em;
+    font-weight: 700; font-size: 0.82rem; display: block; margin-bottom: 0.5rem;
+  }
+  .page-head h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); }
+  .page-head p { color: var(--text-soft); margin-top: 0.75rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+  .action-group {
+    display: flex; flex-direction: column; gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .action-card {
+    display: block;
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2rem 1.75rem;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(16,58,136,0.08);
+    border-top: 4px solid var(--sage);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .action-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(16,58,136,0.14); }
+  .action-card.pay { border-top-color: var(--gold); }
+  .action-card .card-title {
+    font-family: var(--header-font); font-weight: 700; color: var(--navy-dark);
+    font-size: 1.3rem; margin-bottom: 0.5rem;
+  }
+  .action-card .card-sub { color: var(--text-soft); font-size: 0.95rem; }
+  .action-card .card-cta {
+    display: inline-block; margin-top: 1.1rem;
+    background: var(--navy); color: #fff;
+    padding: 0.7rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 0.95rem;
+  }
+
+  .note {
+    margin-top: 2.5rem; font-size: 0.85rem; color: var(--text-soft);
+    background: var(--white); border-radius: 10px; padding: 1rem 1.25rem;
+  }
+
+  footer { background: var(--navy-dark); color: rgba(255,255,255,0.75); text-align: center; padding: 1.5rem 1.25rem; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">MOCKUP FOR REVIEW — not a live site.</div>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+  <nav aria-label="Primary">
+    <a href="index.html" class="site-name">St. Elmo Booster Club</a>
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <div class="page-head">
+      <span class="topper">Become a Member</span>
+      <h1>Join the Booster Club</h1>
+    </div>
+
+    <div class="action-group">
+
+      <a href="https://the-dragons-den-102514.square.site/product/booster-club-membership/2?cs=true&cst=custom" class="action-card pay" target="_blank" rel="noopener" aria-describedby="pay-sub">
+        <div class="card-title">Pay Membership Dues</div>
+        <div class="card-sub" id="pay-sub">$10 per family for the 2026–2027 school year, paid securely through our Square store.</div>
+        <span class="card-cta">Pay on Square &rarr;</span>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSek3d5dClIgGeuM8ARoCVQInDFwcY24hzxDQzCfM9GfrTz4lg/viewform?usp=sharing&ouid=113460359118575545282" class="action-card help" target="_blank" rel="noopener">
+        <div class="card-title">Tell Us How You'd Like to Help</div>
+        <span class="card-cta">Open the Form &rarr;</span></a>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>St. Elmo Booster Club | Supporting St. Elmo Center for the Gifted, Est. 1990</p>
+</footer>
+
+</body>
+</html>
