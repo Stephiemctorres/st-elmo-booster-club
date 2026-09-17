@@ -163,8 +163,8 @@
   .board-card .name { font-size: 1.15rem; }
 
   /* Where Funds Go */
-  .funds-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
-  .fund-card { background: var(--white); border-radius: 12px; padding: 1.75rem; box-shadow: 0 1px 3px rgba(16,58,136,0.08); text-align: center; }
+  .funds-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+  .fund-card { flex: 1 1 240px; max-width: 260px; background: var(--white); border-radius: 12px; padding: 1.75rem; box-shadow: 0 1px 3px rgba(16,58,136,0.08); text-align: center; }
   .fund-card .icon-badge {
     width: 56px; height: 56px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
